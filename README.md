@@ -1,7 +1,7 @@
 # ROS 2 Middleware Layer for RTI Connext DDS
 
 This repository contains two novel implementations of the [ROS 2](https://index.ros.org/doc/ros2/)
-RMW layer which enable ROS applications to be built using [RTI Connext DDS Professional](https://www.rti.com/products/connext-dds-professional)
+RMW layer which enable developers to build their ROS applications with [RTI Connext DDS Professional](https://www.rti.com/products/connext-dds-professional)
 and [RTI Connext DDS Micro](https://www.rti.com/products/connext-dds-micro).
 
 The repository provides two RMW packages:
