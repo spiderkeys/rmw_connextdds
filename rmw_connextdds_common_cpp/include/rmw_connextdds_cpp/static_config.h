@@ -109,7 +109,7 @@
  * ROS Target Release
  ******************************************************************************/
 #ifndef RMW_CONNEXT_RELEASE
-#define RMW_CONNEXT_RELEASE             RMW_CONNEXT_RELEASE_ROLLING
+#define RMW_CONNEXT_RELEASE             RMW_CONNEXT_RELEASE_FOXY
 #endif /* RMW_CONNEXT_RELEASE */
 
 #include "resource_limits.hpp"
