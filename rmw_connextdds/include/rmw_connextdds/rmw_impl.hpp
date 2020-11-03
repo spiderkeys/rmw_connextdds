@@ -1421,6 +1421,8 @@ rmw_connextdds_create_type_name(
     const message_type_support_callbacks_t * callbacks,
     const bool mangle_names = true);
 
+#if RMW_CONNEXT_HAVE_INTRO_TYPE_SUPPORT
+
 std::string
 rmw_connextdds_create_type_name(
     const rosidl_typesupport_introspection_cpp::MessageMembers *const members,
@@ -1430,6 +1432,8 @@ std::string
 rmw_connextdds_create_type_name(
     const rosidl_typesupport_introspection_c__MessageMembers *const members,
     const bool mangle_names = true);
+
+#endif /* RMW_CONNEXT_HAVE_INTRO_TYPE_SUPPORT */
 
 std::string
 rmw_connextdds_create_type_name_request(
