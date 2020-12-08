@@ -29,32 +29,6 @@
 
 #if !RMW_CONNEXT_HAVE_INCOMPATIBLE_QOS
 
-/******************************************************************************
- * Symbols provided by rmw/incompatible_qos.h from Foxy onward
- ******************************************************************************/
-
-typedef enum RMW_PUBLIC_TYPE rmw_qos_policy_kind_t
-{
-  RMW_QOS_POLICY_INVALID = 1 << 0,
-  RMW_QOS_POLICY_DURABILITY = 1 << 1,
-  RMW_QOS_POLICY_DEADLINE = 1 << 2,
-  RMW_QOS_POLICY_LIVELINESS = 1 << 3,
-  RMW_QOS_POLICY_RELIABILITY = 1 << 4,
-  RMW_QOS_POLICY_HISTORY = 1 << 5,
-  RMW_QOS_POLICY_LIFESPAN = 1 << 6
-} rmw_qos_policy_kind_t;
-
-/******************************************************************************
- * rmw_qos_incompatible_event_status_t is defined by rmw/incompatible_qos.h
- * from Foxy onward.
- ******************************************************************************/
-struct RMW_PUBLIC_TYPE rmw_qos_incompatible_event_status_t
-{
-  int32_t total_count;
-  int32_t total_count_change;
-  rmw_qos_policy_kind_t last_policy_kind;
-};
-
 typedef struct rmw_qos_incompatible_event_status_t rmw_requested_qos_incompatible_event_status_t;
 
 typedef struct rmw_qos_incompatible_event_status_t rmw_offered_qos_incompatible_event_status_t;
@@ -80,11 +54,6 @@ typedef struct rmw_qos_incompatible_event_status_t rmw_offered_qos_incompatible_
  ******************************************************************************/
 #define RMW_EVENT_MESSAGE_LOST  (RMW_EVENT_INVALID + 3)
 
-typedef struct RMW_PUBLIC_TYPE rmw_message_lost_status_t
-{
-  size_t total_count;
-  size_t total_count_change;
-} rmw_message_lost_status_t;
 #endif /* !RMW_CONNEXT_HAVE_MESSAGE_LOST */
 
 #if !RMW_CONNEXT_HAVE_SERVICE_INFO
